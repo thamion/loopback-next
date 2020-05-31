@@ -26,6 +26,7 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@loopback/boot": "^2.3.2",
     "@loopback/build": "^1.7.1",
     "@loopback/core": "^2.7.1",
     "@loopback/repository": "^2.6.0",
@@ -35,6 +36,7 @@
     "@types/node": "^10.17.24"
   },
   "peerDependencies": {
+    "@loopback/boot": "^2.3.2",
     "@loopback/core": "^2.7.1",
     "@loopback/repository": "^2.6.0",
     "@loopback/rest": "^5.1.0"
