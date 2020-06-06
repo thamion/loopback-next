@@ -302,7 +302,7 @@ describe('HasManyThrough relation', () => {
     expect(group1).to.deepEqual([order1]);
   });
 
-  it('can delete an instance then delet the through model', async () => {
+  it('can delete an instance then delete the through model', async () => {
     await hasManyThroughRepo.create(
       {
         description: 'customer 1',
@@ -329,7 +329,6 @@ describe('HasManyThrough relation', () => {
     expect(links).have.length(2);
 
     await hasManyThroughRepo.delete();
-    orders = await orderRepo.find();
     orders = await orderRepo.find();
     links = await customerOrderLinkRepo.find();
 
