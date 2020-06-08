@@ -3,7 +3,7 @@
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {createBindingFromClass} from '@loopback/core';
+import {Application, createBindingFromClass} from '@loopback/core';
 import {supertest} from '@loopback/testlab';
 import {GraphQLServer} from '../..';
 import {RecipesDataSource} from '../fixtures/graphql-test/src/datasources';
@@ -13,8 +13,9 @@ import {sampleRecipes} from '../fixtures/graphql-test/src/sample-recipes';
 import {RecipeService} from '../fixtures/graphql-test/src/services/recipe.service';
 import {runTests} from './graphql-tests';
 
-describe('GraphQL integration', () => {
+describe('GraphQL server', () => {
   let server: GraphQLServer;
+  let repo: RecipeRepository;
 
   before(givenServer);
   after(stopServer);
@@ -22,7 +23,7 @@ describe('GraphQL integration', () => {
   runTests(() => supertest(server.httpServer?.url));
 
   async function givenServer() {
-    server = new GraphQLServer(undefined, {host: '127.0.0.1', port: 0});
+    server = new GraphQLServer({host: '127.0.0.1', port: 0});
     server.resolver(RecipeResolver);
 
     server.bind('recipes').to([...sampleRecipes]);
@@ -31,12 +32,43 @@ describe('GraphQL integration', () => {
     server.add(createBindingFromClass(RecipesDataSource));
     server.add(createBindingFromClass(RecipeService));
     await server.start();
-    const repo = await server.get<RecipeRepository>(repoBinding.key);
+    repo = await server.get<RecipeRepository>(repoBinding.key);
     await repo.start();
   }
 
   async function stopServer() {
     if (!server) return;
     await server.stop();
+    repo.stop();
+  }
+});
+
+describe('GraphQL application', () => {
+  let server: GraphQLServer;
+  let app: Application;
+
+  before(givenApp);
+  after(stopApp);
+
+  runTests(() => supertest(server.httpServer?.url));
+
+  async function givenApp() {
+    app = new Application();
+    const serverBinding = app.server(GraphQLServer);
+    app.configure(serverBinding.key).to({host: '127.0.0.1', port: 0});
+    server = await app.getServer(GraphQLServer);
+    server.resolver(RecipeResolver);
+
+    app.bind('recipes').to([...sampleRecipes]);
+    const repoBinding = createBindingFromClass(RecipeRepository);
+    app.add(repoBinding);
+    app.add(createBindingFromClass(RecipesDataSource));
+    app.add(createBindingFromClass(RecipeService));
+    await app.start();
+  }
+
+  async function stopApp() {
+    if (!app) return;
+    await app.stop();
   }
 });

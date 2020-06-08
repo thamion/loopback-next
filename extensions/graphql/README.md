@@ -30,7 +30,49 @@ export class MyApplication extends BootMixin(RestApplication) {
 This package can be used in two flavors:
 
 - As a server for LoopBack applications
+
+```ts
+import {Application} from '@loopback/core';
+import {GraphQLServer} from '@loopback/graphql';
+
+const app = new Application();
+const serverBinding = app.server(GraphQLServer);
+app.configure(serverBinding.key).to({host: '127.0.0.1', port: 0});
+server = await app.getServer(GraphQLServer);
+// ...
+await app.start();
+```
+
 - As a middleware for LoopBack REST applications
+
+```ts
+export class GraphqlTestApplication extends BootMixin(
+  RepositoryMixin(RestApplication),
+) {
+  constructor(options: ApplicationConfig = {}) {
+    super(options);
+
+    this.component(GraphQLComponent);
+    const server = this.getSync(GraphQLBindings.GRAPHQL_SERVER);
+    this.expressMiddleware('middleware.express.GraphQL', server.expressApp);
+    this.configure(GraphQLBindings.GRAPHQL_SERVER).to({
+      asMiddlewareOnly: true,
+    });
+
+    // ...
+
+    // Customize @loopback/boot Booter Conventions here
+    this.bootOptions = {
+      graphqlResolvers: {
+        // Customize ControllerBooter Conventions here
+        dirs: ['graphql-resolvers'],
+        extensions: ['.js'],
+        nested: true,
+      },
+    };
+  }
+}
+```
 
 ## Add a resolver
 
@@ -96,7 +138,7 @@ export class RecipeResolver implements ResolverInterface<Recipe> {
 }
 ```
 
-## Boot GraphQL resolvers
+## Discover and load GraphQL resolvers
 
 The `GraphQLComponent` contributes a booter that discovers and registers
 resolver classes from `src/graphql-resolvers` during `app.boot()`.

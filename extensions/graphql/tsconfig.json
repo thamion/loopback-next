@@ -23,6 +23,9 @@
       "path": "../../packages/metadata/tsconfig.json"
     },
     {
+      "path": "../../packages/repository/tsconfig.json"
+    },
+    {
       "path": "../../packages/rest/tsconfig.json"
     },
     {

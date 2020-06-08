@@ -19,7 +19,12 @@ import {
   Root,
 } from 'type-graphql';
 
-// export namespace graphql {
+/**
+ * Re-exporting type-graphql decorators as lower case versions for two purposes:
+ * - To be consistent with LoopBack's naming convention of decorators
+ * - Allow future possibility to add extra metadata in addition to type-graphql's
+ * behavior, for example, mapping to LoopBack model properties
+ */
 export const arg = Arg;
 export const args = Args;
 export const argsType = ArgsType;
@@ -31,4 +36,3 @@ export const root = Root;
 export const field = Field;
 export const inputType = InputType;
 export const objectType = ObjectType;
-// }

@@ -53,9 +53,9 @@ export class GraphQLServer extends Context implements Server {
   readonly expressApp: express.Application;
 
   constructor(
+    @config() private options: GraphQLServerOptions = {},
     @inject.context()
     parent?: Context,
-    @config() private options: GraphQLServerOptions = {},
   ) {
     super(parent, 'graphql-server');
     this.expressApp = express();
