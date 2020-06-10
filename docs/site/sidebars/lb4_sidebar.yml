@@ -354,6 +354,10 @@ children:
     url: Metrics.html
     output: 'web, pdf'
 
+  - title: 'Community extensions'
+    url: Community-extensions.html
+    output: 'web, pdf'
+
 - title: 'Extending LoopBack 4'
   url: Extending-LoopBack-4.html
   output: 'web, pdf'
