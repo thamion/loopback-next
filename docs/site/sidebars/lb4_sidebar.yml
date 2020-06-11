@@ -724,7 +724,7 @@ children:
       url: submitting_a_pr.html
       output: 'web, pdf'
 
-- title: 'Reference'
+- title: 'Reference guides'
   url: Reference.html
   output: 'web, pdf'
   children:
