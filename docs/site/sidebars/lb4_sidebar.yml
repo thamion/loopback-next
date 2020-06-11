@@ -23,127 +23,6 @@ children:
   url: Inside-LoopBack-Application.html
   output: 'web, pdf'
 
-- title: 'Key concepts'
-  url: Concepts.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Application'
-    url: Application.html
-    output: 'web, pdf'
-
-  - title: 'Server'
-    url: Server.html
-    output: 'web, pdf'
-
-  - title: 'Controllers'
-    url: Controllers.html
-    output: 'web, pdf'
-
-  - title: 'Models'
-    url: Model.html
-    output: 'web, pdf'
-
-  - title: 'Relations'
-    url: Relations.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'HasMany Relation'
-      url: HasMany-relation.html
-      output: 'web, pdf'
-
-    - title: 'BelongsTo Relation'
-      url: BelongsTo-relation.html
-      output: 'web, pdf'
-
-    - title: 'HasOne Relation'
-      url: HasOne-relation.html
-      output: 'web, pdf'
-
-  - title: 'DataSources'
-    url: DataSources.html
-    output: 'web, pdf'
-
-  - title: 'Repositories'
-    url: Repositories.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Database Transactions'
-      url: Using-database-transactions.html
-      output: 'web, pdf'
-
-  - title: 'Services'
-    url: Services.html
-    output: 'web, pdf'
-
-  - title: 'Interceptors'
-    url: Interceptors.html
-    output: 'web, pdf'
-
-  - title: 'Life cycle events and observers'
-    url: Life-cycle.html
-    output: 'web, pdf'
-
-  - title: 'Routes'
-    url: Routes.html
-    output: 'web, pdf'
-
-  - title: 'Sequence'
-    url: Sequence.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Routing requests'
-      url: Routing-requests.html
-      output: 'web, pdf'
-
-    - title: 'Parsing requests'
-      url: Parsing-requests.html
-      output: 'web, pdf'
-
-  - title: 'Middleware'
-    url: Middleware.html
-    output: 'web, pdf'
-
-  - title: 'Using Express Middleware'
-    url: Express-middleware.html
-    output: 'web, pdf'
-
-  - title: 'Decorators'
-    url: Decorators.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'OpenAPI Decorators'
-      url: Decorators_openapi.html
-      output: 'web, pdf'
-
-    - title: 'Dependency Injection Decorator'
-      url: Decorators_inject.html
-      output: 'web, pdf'
-
-    - title: 'Authentication Decorator'
-      url: Decorators_authenticate.html
-      output: 'web, pdf'
-
-    - title: 'Service Decorators'
-      url: Decorators_service.html
-      output: 'web, pdf'
-
-    - title: 'Repository Decorators'
-      url: Decorators_repository.html
-      output: 'web, pdf'
-
-  - title: 'Mixins'
-    url: Mixin.html
-    output: 'web, pdf'
-
-  - title: 'Error handling'
-    url: Error-handling.html
-    output: 'web, pdf'
-
 - title: 'Usage Scenarios'
   url: Usage-scenarios.html
   output: 'web, pdf'
@@ -319,34 +198,154 @@ children:
   output: 'web, pdf'
   children:
 
-    - title: 'Context'
-      url: Context.html
+  - title: 'Crafting LoopBack 4'
+    url: Crafting-LoopBack-4.html
+    output: 'web, pdf'
+
+  - title: 'Application'
+    url: Application.html
+    output: 'web, pdf'
+
+  - title: 'Server'
+    url: Server.html
+    output: 'web, pdf'
+
+  - title: 'Controllers'
+    url: Controllers.html
+    output: 'web, pdf'
+
+  - title: 'Models'
+    url: Model.html
+    output: 'web, pdf'
+
+  - title: 'Relations'
+    url: Relations.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'HasMany Relation'
+      url: HasMany-relation.html
       output: 'web, pdf'
 
-    - title: 'Binding'
-      url: Binding.html
+    - title: 'BelongsTo Relation'
+      url: BelongsTo-relation.html
       output: 'web, pdf'
 
-    - title: 'Dependency Injection'
-      url: Dependency-injection.html
-      output: 'web, pdf'
-      children:
-
-        - title: 'Reserved binding keys'
-          url: Reserved-binding-keys.html
-          output: 'web, pdf'
-
-    - title: 'Components'
-      url: Components.html
+    - title: 'HasOne Relation'
+      url: HasOne-relation.html
       output: 'web, pdf'
 
-    - title: 'Request/response cycle'
-      url: Request-response-cycle.html
+  - title: 'DataSources'
+    url: DataSources.html
+    output: 'web, pdf'
+
+  - title: 'Repositories'
+    url: Repositories.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Database Transactions'
+      url: Using-database-transactions.html
       output: 'web, pdf'
 
-- title: 'Booting an Application'
-  url: Booting-an-Application.html
-  output: 'web, pdf'
+  - title: 'Services'
+    url: Services.html
+    output: 'web, pdf'
+
+  - title: 'Interceptors'
+    url: Interceptors.html
+    output: 'web, pdf'
+
+  - title: 'Life cycle events and observers'
+    url: Life-cycle.html
+    output: 'web, pdf'
+
+  - title: 'Routes'
+    url: Routes.html
+    output: 'web, pdf'
+
+  - title: 'Sequence'
+    url: Sequence.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Routing requests'
+      url: Routing-requests.html
+      output: 'web, pdf'
+
+    - title: 'Parsing requests'
+      url: Parsing-requests.html
+      output: 'web, pdf'
+
+  - title: 'Middleware'
+    url: Middleware.html
+    output: 'web, pdf'
+
+  - title: 'Using Express Middleware'
+    url: Express-middleware.html
+    output: 'web, pdf'
+
+  - title: 'Decorators'
+    url: Decorators.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'OpenAPI Decorators'
+      url: Decorators_openapi.html
+      output: 'web, pdf'
+
+    - title: 'Dependency Injection Decorator'
+      url: Decorators_inject.html
+      output: 'web, pdf'
+
+    - title: 'Authentication Decorator'
+      url: Decorators_authenticate.html
+      output: 'web, pdf'
+
+    - title: 'Service Decorators'
+      url: Decorators_service.html
+      output: 'web, pdf'
+
+    - title: 'Repository Decorators'
+      url: Decorators_repository.html
+      output: 'web, pdf'
+
+  - title: 'Mixins'
+    url: Mixin.html
+    output: 'web, pdf'
+
+  - title: 'Error handling'
+    url: Error-handling.html
+    output: 'web, pdf'
+
+  - title: 'Context'
+    url: Context.html
+    output: 'web, pdf'
+
+  - title: 'Binding'
+    url: Binding.html
+    output: 'web, pdf'
+
+  - title: 'Dependency Injection'
+    url: Dependency-injection.html
+    output: 'web, pdf'
+    children:
+
+      - title: 'Reserved binding keys'
+        url: Reserved-binding-keys.html
+        output: 'web, pdf'
+
+  - title: 'Components'
+    url: Components.html
+    output: 'web, pdf'
+
+  - title: 'Request/response cycle'
+    url: Request-response-cycle.html
+    output: 'web, pdf'
+
+  - title: 'Booting an Application'
+    url: Booting-an-Application.html
+    output: 'web, pdf'
 
 - title: 'Using Components'
   url: Using-components.html
@@ -429,10 +428,6 @@ children:
   - title: 'Testing your extension'
     url: Testing-your-extension.html
     output: 'web, pdf'
-
-- title: 'Crafting LoopBack 4'
-  url: Crafting-LoopBack-4.html
-  output: 'web, pdf'
 
 - title: 'Tutorials'
   url: Tutorials.html
