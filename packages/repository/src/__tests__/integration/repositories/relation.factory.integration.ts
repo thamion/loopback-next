@@ -413,6 +413,32 @@ describe('HasManyThrough relation', () => {
       ]),
     );
   });
+
+  it('links a target instance to the source instance', async () => {
+    const order = await orderRepo.create({description: 'an order'});
+    let targets = await hasManyThroughRepo.find();
+    expect(targets).to.deepEqual([]);
+
+    await hasManyThroughRepo.link(order, {throughData: {id: 98}});
+    targets = await hasManyThroughRepo.find();
+    expect(toJSON(targets)).to.containDeep(toJSON([order]));
+  });
+
+  it('unlinks a target instance from the source instance', async () => {
+    const order = await hasManyThroughRepo.create(
+      {description: 'an order'},
+      {throughData: {id: 99}},
+    );
+    let targets = await hasManyThroughRepo.find();
+    expect(toJSON(targets)).to.containDeep(toJSON([order]));
+
+    await hasManyThroughRepo.unlink(order);
+    targets = await hasManyThroughRepo.find();
+    expect(targets).to.deepEqual([]);
+    // the through model should be deleted
+    const thoughs = await customerOrderLinkRepo.find();
+    expect(thoughs).to.deepEqual([]);
+  });
   //--- HELPERS ---//
 
   async function givenPersistedCustomerInstance() {
