@@ -347,6 +347,34 @@ children:
         url: Validation-ORM-layer.html
         output: 'web, pdf'
 
+  - title: 'Self-hosted REST API Explorer'
+    url: Self-hosted-rest-api-explorer.html
+    output: 'web, pdf'
+
+  - title: 'Creating CRUD REST APIs from a model'
+    url: Creating-crud-rest-apis.html
+    output: 'web, pdf'
+
+  - title: 'Authorization'
+    url: Loopback-component-authorization.html
+    output: 'web, pdf'
+
+  - title: 'Boot and Mount a LoopBack 3 Application'
+    url: Boot-and-Mount-a-LoopBack-3-application.html
+    output: 'web, pdf'
+
+  - title: 'Running cron jobs'
+    url: Running-cron-jobs.html
+    output: 'web, pdf'
+
+  - title: 'Health check'
+    url: Health.html
+    output: 'web, pdf'
+
+  - title: 'Metrics for Prometheus'
+    url: Metrics.html
+    output: 'web, pdf'
+
 - title: 'Behind the Scenes'
   url: Behind-the-scene.html
   output: 'web, pdf'
@@ -499,39 +527,6 @@ children:
 
   - title: 'Booting an Application'
     url: Booting-an-Application.html
-    output: 'web, pdf'
-
-- title: 'Using Components'
-  url: Using-components.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Self-hosted REST API Explorer'
-    url: Self-hosted-rest-api-explorer.html
-    output: 'web, pdf'
-
-  - title: 'Creating CRUD REST APIs from a model'
-    url: Creating-crud-rest-apis.html
-    output: 'web, pdf'
-
-  - title: 'Authorization'
-    url: Loopback-component-authorization.html
-    output: 'web, pdf'
-
-  - title: 'Boot and Mount a LoopBack 3 Application'
-    url: Boot-and-Mount-a-LoopBack-3-application.html
-    output: 'web, pdf'
-
-  - title: 'Running cron jobs'
-    url: Running-cron-jobs.html
-    output: 'web, pdf'
-
-  - title: 'Health check'
-    url: Health.html
-    output: 'web, pdf'
-
-  - title: 'Metrics for Prometheus'
-    url: Metrics.html
     output: 'web, pdf'
 
 - title: 'Extending LoopBack 4'
