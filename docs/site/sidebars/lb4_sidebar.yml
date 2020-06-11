@@ -529,175 +529,6 @@ children:
     url: Booting-an-Application.html
     output: 'web, pdf'
 
-- title: 'Extending LoopBack 4'
-  url: Extending-LoopBack-4.html
-  output: 'web, pdf'
-  children:
-
-  - title: 'Creating components'
-    url: Creating-components.html
-    output: 'web, pdf'
-
-  - title: 'Creating decorators'
-    url: Creating-decorators.html
-    output: 'web, pdf'
-
-  - title: 'Contributing REST API'
-    url: 'creating-components-rest-api.html'
-    output: 'web, pdf'
-
-  - title: 'Creating services'
-    url: 'creating-components-services.html'
-    output: 'web, pdf'
-
-  - title: 'Creating servers'
-    url: Creating-servers.html
-    output: 'web, pdf'
-
-  - title: 'Extension point and extensions'
-    url: Extension-point-and-extensions.html
-    output: 'web, pdf'
-
-  - title: 'Extending request body parsing'
-    url: Extending-request-body-parsing.html
-    output: 'web, pdf'
-
-  - title: 'Extension life cycle'
-    url: Extension-life-cycle.html
-    output: 'web, pdf'
-
-  - title: 'Extending OpenAPI specification'
-    url: Extending-OpenAPI-specification.html
-    output: 'web, pdf'
-
-  - title: 'Extending Model API builder'
-    url: Extending-Model-API-builder.html
-    output: 'web, pdf'
-
-  - title: 'Testing your extension'
-    url: Testing-your-extension.html
-    output: 'web, pdf'
-
-- title: 'Migration guide'
-  url: 'migration-overview.html'
-  output: 'web, pdf'
-  children:
-
-  - title: 'Understanding the differences'
-    url: Understanding-the-differences.html
-    output: 'web, pdf'
-
-  - title: 'Booting process'
-    url: LB3-vs-LB4-booting.html
-    output: 'web, pdf'
-
-  - title: 'Request/response cycle'
-    url: LB3-vs-LB4-request-response-cycle.html
-    output: 'web, pdf'
-
-  - title: 'Mounting a LoopBack 3 application'
-    url: migration-mounting-lb3app.html
-    output: 'web, pdf'
-
-  - title: 'Express middleware'
-    url: migration-express-middleware.html
-    output: 'web, pdf'
-
-  - title: 'Datasources'
-    url: migration-datasources.html
-    output: 'web, pdf'
-
-  - title: 'Migrating models'
-    url: migration-models-overview.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Model definitions and built-in APIs'
-      url: migration-models-core.html
-      output: 'web, pdf'
-
-    - title: 'Relations'
-      url: migration-models-relations.html
-      output: 'web, pdf'
-
-    - title: 'Custom methods'
-      url: migration-models-methods.html
-      output: 'web, pdf'
-
-    - title: 'Remoting hooks'
-      url: migration-models-remoting-hooks.html
-      output: 'web, pdf'
-
-    - title: 'CRUD operation hooks'
-      url: migration-models-operation-hooks.html
-      output: 'web, pdf'
-
-    - title: 'Mixins'
-      url: migration-models-mixins.html
-      output: 'web, pdf'
-
-  - title: 'Boot scripts'
-    url: migration-boot-scripts.html
-    output: 'web, pdf'
-
-  - title: 'Authentication & authorization'
-    url: migration-auth-overview.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Access control example'
-      url: migration-auth-access-control-example.html
-      output: 'web, pdf'
-
-    - title: 'Built-in models and authentication'
-      url: migration-authentication.html
-      output: 'web, pdf'
-
-    - title: 'Passport'
-      url: migration-auth-passport.html
-      output: 'web, pdf'
-
-    - title: 'OAuth2 Provider'
-      url: migration-auth-oauth2.html
-      output: 'web, pdf'
-
-  - title: 'CLI'
-    url: migration-cli.html
-    output: 'web, pdf'
-
-  - title: 'Components and extensions'
-    url: migration-extensions-overview.html
-    output: 'web, pdf'
-    children:
-
-    - title: 'Project layout'
-      url: migration-extensions-project-layout.html
-      output: 'web, pdf'
-
-    - title: 'Models'
-      url: migration-extensions-models.html
-      output: 'web, pdf'
-
-    - title: 'Current context'
-      url: migration-extensions-current-context.html
-      output: 'web, pdf'
-
-    - title: 'Mixins'
-      url: migration-extensions-mixins.html
-      output: 'web, pdf'
-
-    - title: 'REST API'
-      url: migration-extensions-rest-api.html
-      output: 'web, pdf'
-
-  - title: 'Clients (API consumers)'
-    url: migration-clients.html
-    output: 'web, pdf'
-
-  - title: 'Features not planned'
-    url: migration-not-planned.html
-    output: 'web, pdf'
-
 - title: 'Best practices'
   url: Best-practices.html
   output: 'web, pdf'
@@ -714,15 +545,6 @@ children:
   - title: 'Testing your application'
     url: Testing-your-application.html
     output: 'web, pdf'
-
-- title: 'Contribute to LoopBack 4'
-  url: code-contrib-lb4.html
-  output: 'web, pdf'
-  children:
-
-    - title: 'Submitting a pull request to LoopBack 4'
-      url: submitting_a_pr.html
-      output: 'web, pdf'
 
 - title: 'Reference guides'
   url: Reference.html
@@ -981,6 +803,184 @@ children:
     url: changelog.index.html
     output: 'web, pdf'
 
+- title: 'Extending LoopBack 4'
+  url: Extending-LoopBack-4.html
+  output: 'web, pdf'
+  children:
+
+  - title: 'Creating components'
+    url: Creating-components.html
+    output: 'web, pdf'
+
+  - title: 'Creating decorators'
+    url: Creating-decorators.html
+    output: 'web, pdf'
+
+  - title: 'Contributing REST API'
+    url: 'creating-components-rest-api.html'
+    output: 'web, pdf'
+
+  - title: 'Creating services'
+    url: 'creating-components-services.html'
+    output: 'web, pdf'
+
+  - title: 'Creating servers'
+    url: Creating-servers.html
+    output: 'web, pdf'
+
+  - title: 'Extension point and extensions'
+    url: Extension-point-and-extensions.html
+    output: 'web, pdf'
+
+  - title: 'Extending request body parsing'
+    url: Extending-request-body-parsing.html
+    output: 'web, pdf'
+
+  - title: 'Extension life cycle'
+    url: Extension-life-cycle.html
+    output: 'web, pdf'
+
+  - title: 'Extending OpenAPI specification'
+    url: Extending-OpenAPI-specification.html
+    output: 'web, pdf'
+
+  - title: 'Extending Model API builder'
+    url: Extending-Model-API-builder.html
+    output: 'web, pdf'
+
+  - title: 'Testing your extension'
+    url: Testing-your-extension.html
+    output: 'web, pdf'
+
+- title: 'Contribute to LoopBack 4'
+  url: code-contrib-lb4.html
+  output: 'web, pdf'
+  children:
+
+    - title: 'Submitting a pull request to LoopBack 4'
+      url: submitting_a_pr.html
+      output: 'web, pdf'
+
 - title: 'FAQ'
   url: FAQ.html
   output: 'web, pdf'
+
+- title: 'Migration guide'
+  url: 'migration-overview.html'
+  output: 'web, pdf'
+  children:
+
+  - title: 'Understanding the differences'
+    url: Understanding-the-differences.html
+    output: 'web, pdf'
+
+  - title: 'Booting process'
+    url: LB3-vs-LB4-booting.html
+    output: 'web, pdf'
+
+  - title: 'Request/response cycle'
+    url: LB3-vs-LB4-request-response-cycle.html
+    output: 'web, pdf'
+
+  - title: 'Mounting a LoopBack 3 application'
+    url: migration-mounting-lb3app.html
+    output: 'web, pdf'
+
+  - title: 'Express middleware'
+    url: migration-express-middleware.html
+    output: 'web, pdf'
+
+  - title: 'Datasources'
+    url: migration-datasources.html
+    output: 'web, pdf'
+
+  - title: 'Migrating models'
+    url: migration-models-overview.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Model definitions and built-in APIs'
+      url: migration-models-core.html
+      output: 'web, pdf'
+
+    - title: 'Relations'
+      url: migration-models-relations.html
+      output: 'web, pdf'
+
+    - title: 'Custom methods'
+      url: migration-models-methods.html
+      output: 'web, pdf'
+
+    - title: 'Remoting hooks'
+      url: migration-models-remoting-hooks.html
+      output: 'web, pdf'
+
+    - title: 'CRUD operation hooks'
+      url: migration-models-operation-hooks.html
+      output: 'web, pdf'
+
+    - title: 'Mixins'
+      url: migration-models-mixins.html
+      output: 'web, pdf'
+
+  - title: 'Boot scripts'
+    url: migration-boot-scripts.html
+    output: 'web, pdf'
+
+  - title: 'Authentication & authorization'
+    url: migration-auth-overview.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Access control example'
+      url: migration-auth-access-control-example.html
+      output: 'web, pdf'
+
+    - title: 'Built-in models and authentication'
+      url: migration-authentication.html
+      output: 'web, pdf'
+
+    - title: 'Passport'
+      url: migration-auth-passport.html
+      output: 'web, pdf'
+
+    - title: 'OAuth2 Provider'
+      url: migration-auth-oauth2.html
+      output: 'web, pdf'
+
+  - title: 'CLI'
+    url: migration-cli.html
+    output: 'web, pdf'
+
+  - title: 'Components and extensions'
+    url: migration-extensions-overview.html
+    output: 'web, pdf'
+    children:
+
+    - title: 'Project layout'
+      url: migration-extensions-project-layout.html
+      output: 'web, pdf'
+
+    - title: 'Models'
+      url: migration-extensions-models.html
+      output: 'web, pdf'
+
+    - title: 'Current context'
+      url: migration-extensions-current-context.html
+      output: 'web, pdf'
+
+    - title: 'Mixins'
+      url: migration-extensions-mixins.html
+      output: 'web, pdf'
+
+    - title: 'REST API'
+      url: migration-extensions-rest-api.html
+      output: 'web, pdf'
+
+  - title: 'Clients (API consumers)'
+    url: migration-clients.html
+    output: 'web, pdf'
+
+  - title: 'Features not planned'
+    url: migration-not-planned.html
+    output: 'web, pdf'
