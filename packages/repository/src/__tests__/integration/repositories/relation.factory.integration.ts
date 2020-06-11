@@ -235,7 +235,7 @@ describe('HasManyThrough relation', () => {
     await orderRepo.deleteAll();
   });
 
-  it('can create an target instance alone with the corresponding through model', async () => {
+  it('creates an target instance alone with the corresponding through model', async () => {
     const order = await hasManyThroughRepo.create(
       {
         description: 'an order hasManyThrough',
@@ -256,7 +256,7 @@ describe('HasManyThrough relation', () => {
     expect(toJSON(persistedLink[0])).to.deepEqual(toJSON(expected));
   });
 
-  it('can find an instance via through model', async () => {
+  it('finds an instance via through model', async () => {
     const order = await hasManyThroughRepo.create(
       {
         description: 'an order hasManyThrough',
@@ -275,7 +275,7 @@ describe('HasManyThrough relation', () => {
     expect(orders).to.deepEqual([order]);
   });
 
-  it('can find instances via through models', async () => {
+  it('finds instances via through models', async () => {
     const order1 = await hasManyThroughRepo.create(
       {
         description: 'group 1',
@@ -302,7 +302,7 @@ describe('HasManyThrough relation', () => {
     expect(group1).to.deepEqual([order1]);
   });
 
-  it('can delete an instance then delete the through model', async () => {
+  it('deletes an instance then delete the through model', async () => {
     await hasManyThroughRepo.create(
       {
         description: 'customer 1',
@@ -385,7 +385,7 @@ describe('HasManyThrough relation', () => {
     expect(links[0]).has.property('customerId', existingCustomerId + 1);
   });
 
-  it('can patch instances that belong to the same source model (same source fk)', async () => {
+  it('patches instances that belong to the same source model (same source fk)', async () => {
     const order1 = await hasManyThroughRepo.create(
       {
         description: 'group 1',
