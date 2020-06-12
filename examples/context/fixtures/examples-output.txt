@@ -1,3 +1,7 @@
+> async-provider.js
+AsyncValueProvider
+SyncValueProvider
+
 > binding-types.js
 [2019-06-02T06:50:02.765Z] (/greet#1) Hello, John
 [2019-06-02T06:50:02.766Z] (/greet#2) Hello, John
