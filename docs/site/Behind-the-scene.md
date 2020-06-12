@@ -1,6 +1,6 @@
 ---
 lang: en
-title: 'Behind the scene'
+title: 'Behind the scenes'
 keywords: LoopBack 4, Node.js, TypeScript, OpenAPI, Explanations, Concepts
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Behind-the-scene.html

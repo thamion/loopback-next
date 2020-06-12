@@ -319,6 +319,10 @@ children:
         url: Appsody-LoopBack.html
         output: 'web, pdf'
 
+  - title: 'Using Express Middleware'
+    url: Express-middleware.html
+    output: 'web, pdf'
+
   - title: 'Serving Static Files'
     url: Serving-static-files.html
     output: 'web, pdf'
@@ -461,10 +465,6 @@ children:
 
   - title: 'Middleware'
     url: Middleware.html
-    output: 'web, pdf'
-
-  - title: 'Using Express Middleware'
-    url: Express-middleware.html
     output: 'web, pdf'
 
   - title: 'Decorators'
@@ -795,12 +795,12 @@ children:
       url: Community-connectors.html
       output: 'web, pdf'
 
-  - title: 'Considerations for GDPR readiness'
-    url: Deploy-for-GDPR-readiness.html
-    output: 'web, pdf'
-
   - title: 'Change logs'
     url: changelog.index.html
+    output: 'web, pdf'
+
+  - title: 'Considerations for GDPR readiness'
+    url: Deploy-for-GDPR-readiness.html
     output: 'web, pdf'
 
 - title: 'Extending LoopBack 4'
